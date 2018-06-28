@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123456"
+    tools:context=".Division">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/smile"
+        android:layout_above="@id/question"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="  A / B  "
+        android:id="@+id/question"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:paddingTop="20sp"
+
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Answer"
+        android:id="@+id/answer"
+        android:textSize="20sp"
+        android:textColorHint="#fff"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/question"
+        />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:layout_below="@id/answer"
+        android:id="@+id/next"
+        android:onClick="nextQuestion"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="check"
+        android:layout_below="@id/next"
+        android:id="@+id/check"
+        android:onClick="checkAnswer"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/printAns"
+        android:layout_below="@id/check"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
